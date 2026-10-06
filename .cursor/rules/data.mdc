@@ -1,0 +1,6 @@
+---
+description: Data integrity rules
+alwaysApply: true
+---
+- Follow AGENTS.md data rules. If a change touches data/ or scripts/parse.ts,
+  list every affected figure in your summary.

@@ -1,18 +1,20 @@
-# Bhutan Public Finance Tracker — rules for AI assistants
+# Bhutan Budget Dashboard — rules for AI assistants
 
-Read docs/architecture.md before proposing changes.
+Read docs/plan.md before proposing changes. Plan first; wait for approval.
 
 ## Data rules (non-negotiable)
-- Never invent, estimate or "fill in" a Bhutanese financial or statistical figure.
-- Every fact row needs a citation_id. No citation, no row.
-- Never update a fact in place; supersede it (§5.1).
-- Money is Decimal / NUMERIC(18,2) in ngultrum. Never float, never millions.
-- Calculated values are computed at read time from metrics/registry.py, never stored.
-- Never derive spending from progress_pct.
-- Dev fixtures use obviously fake names ("Example Agency A").
+- Never invent, estimate, round or "fill in" a figure. Data comes only from
+  CSVs I enter from Ministry of Finance reports.
+- Never edit files in data/ unless I explicitly ask; fixtures for tests live in
+  scripts/rules/__fixtures__ and use obviously fake values.
+- printed_value is kept exactly as printed. amount_nu is derived by
+  scripts/parse.ts using string arithmetic to integer ngultrum, never floats.
+- Every displayed number carries its stage and a link to document + page.
+- Missing means "Not published"; never 0, never interpolated.
+- Never mix stages in a total, share or growth rate.
 
 ## Engineering rules
-- Python: Django 5, DRF, type hints, ruff. Business logic lives in services, not views.
-- TypeScript strict. API types come from lib/api/generated; never hand-write them.
-- UI components never contain financial numbers; they render API value objects.
-- Small diffs. Explain any schema change before making it.
+- TypeScript strict. Row types come from zod schemas in src/lib/schema.ts.
+- Chart components receive Figure objects (value, stage, source), not raw numbers.
+- Next.js static export only: no server routes, no runtime data fetching.
+- Small diffs; one feature per branch; tests for every rule and parser.
