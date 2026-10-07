@@ -1,0 +1,16 @@
+printed_name,kind,key,doc_id
+Total Resources,category,res.total,br-2026-27
+1. Domestic Revenue,category,res.domestic,br-2026-27
+2. Other Receipts,category,res.other,br-2026-27
+3. Grants,category,res.grants,br-2026-27
+Total Outlay,category,exp.total,br-2026-27
+1. Recurrent Expenditure,category,exp.recurrent,br-2026-27
+2. Capital Expenditure,category,exp.capital,br-2026-27
+Advance/Suspense (Net),category,exp.advance_suspense,br-2026-27
+Net Other Payment,category,exp.other_payment,br-2026-27
+Overall Balance,category,bal.overall,br-2026-27
+Financing,category,fin.total,br-2026-27
+Net Lending,category,fin.net_lending,br-2026-27
+Net External Borrowings,category,fin.external,br-2026-27
+Net Internal Borrowings,category,fin.internal,br-2026-27
+Fiscal Balance % of GDP,category,bal.overall_pct_gdp,br-2026-27

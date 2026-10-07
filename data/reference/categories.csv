@@ -1,0 +1,16 @@
+category,label,parent,family
+res.total,Total Resources,,resources
+res.domestic,Domestic revenue,res.total,resources
+res.other,Other receipts,res.total,resources
+res.grants,Grants,res.total,resources
+exp.total,Total expenditure (outlay),,expenditure
+exp.recurrent,Recurrent expenditure,exp.total,expenditure
+exp.capital,Capital expenditure,exp.total,expenditure
+exp.advance_suspense,Advance/suspense (net),exp.total,expenditure
+exp.other_payment,Net other payment,exp.total,expenditure
+bal.overall,Overall (fiscal) balance,,balance
+fin.total,Financing,,financing
+fin.net_lending,Net lending,fin.total,financing
+fin.external,Net external borrowings,fin.total,financing
+fin.internal,Net internal borrowings,fin.total,financing
+bal.overall_pct_gdp,"Fiscal balance, % of GDP",,balance
