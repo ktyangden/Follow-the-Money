@@ -1,0 +1,6 @@
+fy,stage,as_of,category,agency,geo,printed_value,printed_unit,doc_id,page,table,row_label,col_label,note
+2099,BE,,cat.example.total,,,"1,000.000",Nu. million,doc-example,1,9.9,Example Total,FY 2099-00 Estimates,fake fixture
+2099,BE,,cat.example.child,,,-,Nu. million,doc-example,1,9.9,Example Missing,FY 2099-00 Estimates,fake fixture
+2099,BE,,cat.example.balance,,,"(12.500)",Nu. million,doc-example,1,9.9,Example Balance,FY 2099-00 Estimates,fake fixture
+2099,BE,,cat.example.pct,,,(1.25%),% of GDP,doc-example,1,9.9,Example Percent,FY 2099-00 Estimates,fake fixture
+2098,ACT,2098-06-30,cat.example.nu,agency-x,geo-x,42,Nu.,doc-example,2,9.9,Example Ngultrum,FY 2098-99 Actual,fake fixture

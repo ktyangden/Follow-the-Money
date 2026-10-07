@@ -1,0 +1,5 @@
+fy,stage,as_of,category,agency,geo,printed_value,printed_unit,doc_id,page,table,row_label,col_label,note
+2099,NOPE,,cat.example.total,,,"1,000.000",Nu. million,doc-example,1,9.9,Example Total,FY 2099-00 Estimates,fake fixture
+1800,BE,,cat.example.total,,,"1,000.000",Nu. million,doc-example,1,9.9,Example Total,FY 2099-00 Estimates,fake fixture
+2099,BE,,cat.example.total,,,"1,000.000",widgets,doc-example,1,9.9,Example Total,FY 2099-00 Estimates,fake fixture
+2099,BE,,cat.example.total,,,not-a-number,Nu. million,doc-example,1,9.9,Example Total,FY 2099-00 Estimates,fake fixture
